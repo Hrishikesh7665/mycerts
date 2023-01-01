@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <title>CodePen - Hover-effect-card</title> -->
+  <link rel="stylesheet" href="./vendor/pageloader.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./vendor/style.css">
+</head>
+
+
+<div id="loading">
+  <div class="page_loader">
+    <div class="square one"></div>
+    <div class="square two"></div>
+    <div class="square three"></div>
+    <div class="square two"></div>
+    <div class="square three"></div>
+    <div class="square four"></div>
+    <div class="square three"></div>
+    <div class="square four"></div>
+    <div class="square five"></div>
+  </div>
+</div>
+
+<body onload="page_loaded()">
+
+  <!-- <header class="hide_me"> -->
+  <nav class="navbar navbar-expand sticky-top hide_me">
+    <ul class="navbar-nav ml-auto justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="back_top(event)">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Certificate's</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="view_social(event)">Social Link</a>
+      </li>
+    </ul>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+  </nav>
+  <!-- </header> -->
+  <!-- <nav class="navbar navbar-expand sticky-top navbar-light bg-light">
+      <div class="container">
+          <a class="navbar-brand" href="#">Brand</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar1">
+              <ul class="navbar-nav">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Link</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav> -->
+
+
+  <main class="hide_me">
+
+    <!-- i, Welcome -->
+    <section class="section-one">
+      <h1><span class="firstcharacter">H</span><span id="head"></span><span class="big_blinker"></span></h1>
+      <span class="bio" id="bio1"></span><span class="blinker" id="bio1_blink"></span>
+      </br>
+      <span class="bio" id="bio2"></span><span class="blinker" id="bio2_blink"></span>
+      </br>
+      </br>
+      <span class="bio" id="bio3"></span><span class="blinker" id="bio3_blink"></span>
+      <div class="typing-container">
+        <span id="sentence" class="sentence"></span>
+        <span class="input-cursor"></span>
+      </div>
+    </section>
+    <hr />
+
+
+    <div class="container">
+      <div class="certificate-container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/CEH_Certificate.png"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Certified Ethical Hacker (CEHv11)</b><br>Ec-Council<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">ECC7093168524</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/Advent%20of%20Cyber%20THM.png"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Advent of Cyber 2022</b><br>Try Hack Me<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">THM-RSLQU4VMTO</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/ISOEH%20C.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>C Programming</b><br>ISOEH<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">- NA -</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: none" class="disabled"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/ISOEH%20CCNA.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>CCNA 3.0 Training</b><br>ISOEH<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">- NA -</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: none" class="disabled"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/ISOEH%20Java.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Core Java</b><br>ISOEH<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">- NA -</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: none" class="disabled"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/ISOEH%20RDBMS.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Relational Database Management System (RDBMS)</b><br
+                      style="content: ' '; display: block; margin: 5.5px 0;" />ISOEH</h1>
+                  <!-- <span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">- NA -</span> -->
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: none" class="disabled"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/ISOEH%20Python.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Python</b><br>ISOEH<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">- NA -</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: none" class="disabled"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/ISOEH%20WPT1.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Web Application Penetration Testing Level 1 (WPT1)</b><br
+                      style="content: ' '; display: block; margin: 5.5px 0;" />ISOEH</h1>
+                  <!-- <span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">- NA -</span> -->
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: none" class="disabled"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/ISOEH%20NPT1.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Network Penetration Testing Level 1 (NPT1)</b><br
+                      style="content: ' '; display: block; margin: 5.5px 0;" />ISOEH</h1>
+                  <!-- <span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">- NA -</span> -->
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: none" class="disabled"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/ISOEH%20CCNA.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>CCNA 3.0 Training</b><br>ISOEH<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">- NA -</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: none" class="disabled"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/CEH_Certificate.png"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Certified Ethical Hacker (CEHv11)</b><br>Ec-Council<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">ECC7093168524</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/HackerRankPython.png"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Python (Basic)</b><br>HackerRank<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">E0D412763D1B</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/HackerRankProblemSolving.png"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Problem Solving (Basic)</b><br>HackerRank<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">4B503EB141DE</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/IndianArmyhackathon.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Sainya Ranakshetram</b><br>Indian Army<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">3241066000000599075</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/Code%20Red%20Android%20bug%20Bounty.png"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Android Bug Bounty Hunting</b><br>CodeRed by Ec - Council<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">368326427150401</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/Code%20Red%20EH.png"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Ethical Hacking Essentials (EHE)</b><br>CodeRed by Ec - Council<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">368326427150407</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/CEH_Certificate.png"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Certified Ethical Hacker (CEHv11)</b><br>Ec-Council<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">ECC7093168524</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/ISOEH_GroundZero2021.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Ground Zero Online Hackathon</b><br>ISOEH<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">- NA -</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: none" class="disabled"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/Damncon2021CTFCertificate.png"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Damncon 2021 CTF</b><br>Damn Secure Pentesting Hub<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">- NA -</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: none" class="disabled"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Last Row -->
+        <div class="row">
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/Solo%20Learn%20Python_certificate.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Python 3 Tutorial course</b><br>Solo Learn<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">1073-16489936</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/Solo%20Learn%20Java_certificate.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>Java Tutorial Course</b><br>Solo Learn<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">1068-16489936</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 certificate-1">
+            <div class="certificate">
+              <div class="certificate-image">
+                <img
+                  src="https://raw.githubusercontent.com/Hrishikesh7665/Hrishikesh7665/achievements/Solo%20Learn%20HTML_certificate.jpg"
+                  class="img-fluid d-block m-auto" alt="certificate-image">
+              </div>
+              <div class="certificate-details">
+                <div class="certificate-name">
+                  <h1 class="text-center"><b>HTML Fundamentals Course</b><br>Solo Learn<br
+                      style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-role">Certificate
+                      Number / ID</span><br style="content: ' '; display: block; margin: -3.5px 0;" /><span
+                      class="certificate-no">1014-16489936</span></h1>
+                </div>
+                <div class="certificate-social-link">
+                  <ul>
+                    <li onclick="showModal(this)" style="cursor: pointer"><i class="fa fa-arrows-alt"
+                        aria-hidden="true"></i></li>
+                    <li onclick="Copy_to_Clipboard(this)" style="cursor: pointer"><i class="fa fa-clone"
+                        aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="snackbar">Certificate No. / ID Coppiced to Clipboard <i class="fa fa-clipboard" aria-hidden="true"></i>
+    </div>
+
+    <div id="myModal" class="modal modal-dialog modal-dialog-centered">
+      <img class="modal-content" id="put_image">
+    </div>
+  </main>
+
+
+  <style>
+    /* img {
+    max-width: 100%;
+    height: auto;
+}
+        section {
+            padding: 60px 0;
+
+        }*/
+    /* ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        } 
+.contact-area {
+    border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+    font-size: 25px;
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.contact-content p::after {
+    background: #353C46;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+} */
+
+
+
+    /* .contact-content span {
+    color: #353c47;
+    margin: 0 10px;
+} */
+
+    /* .contact-social {
+    margin-top: 30px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid #FAB702;
+    color: #FAB702;
+}
+
+.contact-content img {
+    max-width: 210px;
+} */
+
+    /* section, footer {
+    background: #1A1E25;
+    color: #868c96;
+} */
+
+    /* footer p {
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 44px;
+} */
+
+    /* footer {
+  bottom: 0;
+} */
+
+    /* .foter_section {
+  text-align: center;
+} */
+  </style>
+
+  <!-- <section class="foter_section">
+
+</section> -->
+  <style>
+    /* @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+} */
+
+    /* html, */
+    /* body {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+} */
+
+    .button {
+      float: left;
+      width: 60px;
+      height: 60px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      /* background: rgb(182, 43, 43); */
+      /* background: var(--nav-color); */
+      background: var(--light-color);
+      overflow: hidden;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .button span {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 60px;
+      margin-left: 10px;
+    }
+
+    .button:hover {
+      width: 200px;
+    }
+
+    /* github */
+
+    .button:nth-child(1):hover .icon {
+      background: #333;
+    }
+
+    .button:nth-child(1) span {
+      color: #333;
+    }
+
+    /* Linkedin #0A66C2*/
+
+    .button:nth-child(2):hover .icon {
+      background: #0A66C2;
+    }
+
+    .button:nth-child(2) span {
+      color: #0A66C2;
+    }
+    
+
+    /* twiter #00acee*/
+
+    .button:nth-child(3):hover .icon {
+      background: #00acee;
+    }
+
+    .button:nth-child(3) span {
+      color: #00acee;
+    }
+
+    /* facebook  #4267B2*/
+
+    .button:nth-child(4):hover .icon {
+      background: #4267B2;
+    }
+
+    .button:nth-child(4) span {
+      color: #4267B2;
+    }
+
+    /* telegram */
+    .button:nth-child(5):hover .icon {
+      background: #2AABEE;
+    }
+
+    .button:nth-child(5) span {
+      color: #2AABEE;
+    }
+
+    .button .icon {
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      border-radius: 50px;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .button .icon i {
+      font-size: 25px;
+      line-height: 60px;
+      transition: all 0.3s ease-in-out;
+      color: var(--main-color);
+    }
+
+    .button:hover i {
+      color: white;
+    }
+
+    .main_footer {
+      margin-top: 20px;
+      width: 100%;
+      height: 170px;
+      display: grid;
+      place-items: center;
+      background-color: var(--nav-background-color);
+    }
+
+    .contact-content p {
+    font-size: 30px;
+    margin: 10px 0 40px;
+    position: relative;
+    color: var(--nav-color);
+}
+
+.contact-content p::after {
+    background: var(--nav-color);
+    bottom: -10px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+}
+
+.end_footer{width:calc(100vw-12px); min-height: 50px;}
+
+/* .item1, item2{width:200px;} */
+.item1{float:left; margin-top: 15px; color: var(--author-color);}
+.item2{float:right; margin-top: 15px; color: var(--author-color);}
+
+  </style>
+
+  <section class="main_footer hide_me" id="social">
+    <div class="contact-content text-center">
+      <p>Social Link's</p>
+      <div class="hr"></div>
+    </div>
+    <div class="wrapper" style="margin-bottom: 10px;">
+
+      <div class="button">
+        <div class="icon">
+          <i class="fa fa-github"></i>
+        </div>
+        <span>Github</span>
+      </div>
+
+      <div class="button">
+        <div class="icon">
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <span>LinkedIn</span>
+      </div>
+
+      <div class="button">
+        <div class="icon">
+          <i class="fa fa-twitter"></i>
+        </div>
+        <span>Twitter</span>
+      </div>
+
+      <div class="button">
+        <div class="icon">
+          <i class="fa fa-facebook-f"></i>
+        </div>
+        <span>Facebook</span>
+      </div>
+
+      <div class="button">
+        <div class="icon">
+          <i class="fa fa-telegram"></i>
+        </div>
+        <span>Telegram</span>
+      </div>
+
+
+
+    </div>
+  </section>
+  <!-- <div class="footer" style="text-align: end; height: -20px;">
+    <p>Made with by Hrishikesh</p>
+  </div> -->
+  <div class="end_footer hide_me">
+    <div class="item1">&nbsp;Made with &#10084; by <b>Hrishikesh</b></div>
+    <div class="item2"><a onclick="back_top(event)" style="cursor: pointer">Scroll to top <i class="fa fa-arrow-up" aria-hidden="true"></i></a>&nbsp;</div>
+ </div>
+
+</body>
+<!-- main_footer end_footer-->
+
+<script src="./vendor/script.js"></script>
+<script>
+  view_social = function(e) {
+    e.preventDefault();
+    document.getElementsByClassName("main_footer")[0].scrollIntoView();
+  }
+  // function f() {
+  //   console.log(arr);
+  // }
+  // function back_top() {
+  //   document.documentElement.scrollTop = 0;
+  // }
+  back_top = function(e) {
+    e.preventDefault();
+    document.documentElement.scrollTop = 0;
+  }
+
+  function page_loaded() {
+    setTimeout(() => {
+      document.getElementsByTagName('main')[0].classList.remove('hide_me');
+      document.getElementsByTagName('nav')[0].classList.remove('hide_me');
+      document.getElementsByClassName("main_footer")[0].classList.remove('hide_me');
+      document.getElementsByClassName("end_footer")[0].classList.remove('hide_me');
+      document.getElementById('loading').remove();
+      setTimeout(() => { typeWriter(); }, 600);
+    }, 80);
+    // setTimeout(() => {
+    //   typeWriter();
+    // }, 200);
+  }
+</script>
+
+
+</html>

@@ -1,0 +1,84 @@
+
+.page_loader {
+    width: 80px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3rem;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+  }
+  
+  .square {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    animation: load 1.6s ease infinite;
+  }
+  
+  @keyframes load {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(0);
+      background-color: var(--color);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .one {
+    --color: magenta;
+  }
+  
+  .two {
+    animation-delay: 0.1s;
+    --color: lime;
+  }
+  
+  
+  .three {
+    animation-delay: 0.2s;
+    --color: blue;
+  }
+  
+  
+  .four {
+    animation-delay: 0.3s;
+    --color: yellow;
+  }
+  
+  
+  .five {
+    animation-delay: 0.4s;
+    --color: orange;
+  }
+  
+  .hide_me {
+    display: none !important;
+    z-index: 98;
+  }
+  
+  
+  #loading {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0.7;
+    z-index: 99;
+  }
