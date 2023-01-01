@@ -610,3 +610,134 @@ box-shadow: var(--box-shadow-colors);
     width: 100%;
   }
 }
+
+
+.button {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  /* background: rgb(182, 43, 43); */
+  /* background: var(--nav-color); */
+  background: var(--light-color);
+  overflow: hidden;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+.button:hover {
+  width: 200px;
+}
+
+/* github */
+
+.button:nth-child(1):hover .icon {
+  background: #333;
+}
+
+.button:nth-child(1) span {
+  color: #333;
+}
+
+/* Linkedin #0A66C2*/
+
+.button:nth-child(2):hover .icon {
+  background: #0A66C2;
+}
+
+.button:nth-child(2) span {
+  color: #0A66C2;
+}
+
+
+/* twiter #00acee*/
+
+.button:nth-child(3):hover .icon {
+  background: #00acee;
+}
+
+.button:nth-child(3) span {
+  color: #00acee;
+}
+
+/* facebook  #4267B2*/
+
+.button:nth-child(4):hover .icon {
+  background: #4267B2;
+}
+
+.button:nth-child(4) span {
+  color: #4267B2;
+}
+
+/* telegram */
+.button:nth-child(5):hover .icon {
+  background: #2AABEE;
+}
+
+.button:nth-child(5) span {
+  color: #2AABEE;
+}
+
+.button .icon {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-in-out;
+  color: var(--main-color);
+}
+
+.button:hover i {
+  color: white;
+}
+
+.main_footer {
+  margin-top: 20px;
+  width: 100%;
+  height: 170px;
+  display: grid;
+  place-items: center;
+  background-color: var(--nav-background-color);
+}
+
+.contact-content p {
+font-size: 30px;
+margin: 10px 0 40px;
+position: relative;
+color: var(--nav-color);
+}
+
+.contact-content p::after {
+background: var(--nav-color);
+bottom: -10px;
+content: "";
+height: 1px;
+left: 50%;
+position: absolute;
+transform: translate(-50%);
+width: 80%;
+}
+
+.end_footer{width:calc(100vw-12px); min-height: 50px;}
+
+/* .item1, item2{width:200px;} */
+.item1{float:left; margin-top: 15px; color: var(--author-color);}
+.item2{float:right; margin-top: 15px; color: var(--author-color);}

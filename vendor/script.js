@@ -112,3 +112,23 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+view_social = function(e) {
+  e.preventDefault();
+  document.getElementsByClassName("main_footer")[0].scrollIntoView();
+}
+// function f() {
+//   console.log(arr);
+// }
+// function back_top() {
+//   document.documentElement.scrollTop = 0;
+// }
+back_top = function(e) {
+  e.preventDefault();
+  document.documentElement.scrollTop = 0;
+}
+
+function open_urlFUN(arr){
+  window.open("https://www."+arr, '_blank');
+}
